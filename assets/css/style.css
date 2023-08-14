@@ -78,7 +78,7 @@ header{
 	background-repeat: no-repeat; 
 	background-size:cover; 
 	background-position: center;
-	min-height: 80vh;
+	min-height: 100vh;
 	position: relative;
 }
 header .navbar{
@@ -394,7 +394,13 @@ header .navbar{
     color: #fff;
 }
 
-.testimonial-section p{
+.testimonial-section .user-comment1 p{
+	text-align: start;
+	font-size: 26px;
+	font-weight: 400;
+	color: #fff;
+}
+.testimonial-section .user-comment2 p{
 	text-align: start;
 	font-size: 26px;
 	font-weight: 400;
@@ -452,13 +458,13 @@ header .navbar{
 	background-color: #000;
 }
 .ad-section p{
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: 400;
 	color: #fff;
 	text-align: start;
 }
 .ad-section p span{
-	font-size: 38px;
+	font-size: 28px;
 	font-weight: 700;
 	color: #fff;
 }
@@ -469,7 +475,7 @@ header .navbar{
 .ad-section .btn-one{
 	text-transform: uppercase;
 	text-align: right !important;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 700;
 	border: 1px solid #fff;
 	border-radius: 6px;
