@@ -452,13 +452,13 @@ header .navbar{
 	background-color: #000;
 }
 .ad-section p{
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: 400;
 	color: #fff;
 	text-align: start;
 }
 .ad-section p span{
-	font-size: 38px;
+	font-size: 30px;
 	font-weight: 700;
 	color: #fff;
 }
@@ -469,7 +469,7 @@ header .navbar{
 .ad-section .btn-one{
 	text-transform: uppercase;
 	text-align: right !important;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 700;
 	border: 1px solid #fff;
 	border-radius: 6px;
