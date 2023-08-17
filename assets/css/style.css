@@ -598,6 +598,10 @@ header .navbar{
     height: 70px;
     color: #008ed6;
 }
+.contact-section .fa:hover{
+	transform: scale(1.2, 1.2);
+	color: #004366;
+}
 .contact-section p{
 	text-align: center;
     font-size: 25px;
