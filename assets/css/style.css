@@ -622,15 +622,25 @@ header .navbar{
 	height: 110px;
 	border-color: #999;
 }
+.contact-section .from-box input::placeholder,
+.contact-section .from-box textarea::placeholder{
+	color: #adb5bd;
+}
 .contact-section .from-box input[type='submit']{
-	background-color: #008ed6;
-	text-align: center;
-	font-size: 14px;
-	padding: 5px 20px;
-	border: none;
-	border-radius: 3px;
-	display: block;
-	margin-left: auto;
+	background: #008ed6;
+    border: 1px solid #008ed6;
+    border-radius: 3px;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    float: right;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.contact-section .from-box input[type='submit']:hover{
+	background: #004366;
+    border: 1px solid #004366;
 }
 .map iframe{
 	display: block;
