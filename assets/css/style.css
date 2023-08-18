@@ -195,7 +195,7 @@ header .navbar{
     margin-bottom: 20px;
 }
 .feature-section .feature-item{
-	margin-top: 100px;
+	margin-top: 60px;
 }	
 .feature-section .feature-item-box{
 	cursor: pointer;
@@ -224,21 +224,11 @@ header .navbar{
 }
 .feature-section .feature-item-box p{
 	text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 20px;
-    padding: 0px 30px;
-    color: #999999;
-}
-.feature-section .feature-item-box:hover{
-	background-color: #fff;
-	border: none;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
-    box-sizing: border-box;
-    padding: 20px 0;
-    display: block;
-    transition: 0.5s all ease-in-out;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 20px;
+	/* padding: 0px 30px; */
+	color: #999999;
 }
 .feature-section .Feature-item-box{
 	cursor: pointer;
@@ -264,9 +254,9 @@ header .navbar{
     margin-bottom: 20px;
 }
 .about-section p{
-	text-transform: uppercase;
+	text-transform: capitalize;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 60px;
     color: #999999;
 }
@@ -329,9 +319,9 @@ header .navbar{
     margin-bottom: 20px;
 }
 .about-section-2 p{
-	text-transform: uppercase;
+	text-transform: capitalize;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 60px;
     color: #999999;
 }
@@ -432,7 +422,6 @@ header .navbar{
 	font-size: 18px;
 	font-weight: 600;
 	margin-left: 10px;
-	/* line-height: 32px; */
 	color: #fff;
 }
 .owl-theme .owl-dots, .owl-theme .owl-nav {
@@ -533,7 +522,7 @@ header .navbar{
 	color:	#9999;
 }
 .pricing-section .price h1{
-	font-size: 80px;
+	font-size: 60px;
 }
 .pricing-section .price sup{
 	font-size: 40px;
@@ -605,14 +594,20 @@ header .navbar{
     text-align: center;
     font-size: 55px;
     width: 70px;
-    height: 70px;
+    height: 80px;
     color: #008ed6;
+    transition: all 0.3s ease-in-out;
+}
+.contact-section .fa:hover{
+	transform: scale(1.2, 1.2);
+	color: #004366;
 }
 .contact-section p{
 	text-align: center;
     font-size: 25px;
     font-weight: 400;
     color: #9999;
+    margin-top: -12px
 }
 .contact-section .from-box{
 	background-color: #15141a;
@@ -627,20 +622,30 @@ header .navbar{
 	background: transparent;
 	border-color: #999;
 }
+.contact-section .from-box input::placeholder,
+.contact-section .from-box textarea::placeholder{
+	color: #adb5bd;
+}
 .contact-section .from-box textarea{
 	background-color: transparent;
 	height: 110px;
 	border-color: #999;
 }
 .contact-section .from-box input[type='submit']{
-	background-color: #008ed6;
-	text-align: center;
-	font-size: 14px;
-	padding: 5px 20px;
-	border: none;
-	border-radius: 3px;
-	display: block;
-	margin-left: auto;
+	background: #008ed6;
+    border: 1px solid #008ed6;
+    border-radius: 3px;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    float: right;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.contact-section .from-box input[type='submit']:hover{
+	background: #004366;
+    border: 1px solid #004366;
 }
 .map iframe{
 	display: block;
