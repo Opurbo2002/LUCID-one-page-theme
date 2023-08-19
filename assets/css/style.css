@@ -28,6 +28,10 @@ p{
 a{
 	text-decoration: none;
 }
+ul li{
+	padding: 0;
+	margin: 0;
+}
 .padding-0{
 	padding: 0;
 }
@@ -41,7 +45,7 @@ a{
 	display: block;
 	height: 5px;
 	width: 50px;
-	margin: 10px auto 50px auto;
+	margin: 10px auto 30px auto;
 	position: relative;
 }
 .heading span::before{
@@ -74,28 +78,34 @@ a{
 
 /* Header Section */
 header{
-	background-image: url(../img/banner.png); 
-	background-repeat: no-repeat; 
-	background-size:cover; 
+	background-image: url(../img/banner.png);
+	background-repeat: no-repeat;
+	background-size:cover;
 	background-position: center;
-	min-height: 100vh;
 	position: relative;
+	padding-bottom: 40px;
 }
 header .navbar{
 	padding: 25px 100px 25px 0px;
 	margin-left: -10px;
 }
+.height{
+	min-height: 90vh;
+}
 /*Nav Menu Section*/
 .navbar .nav-item{
 	margin: 0 15px;
 }
-.navbar .nav-link{
+header .nav-link{
 	text-transform: uppercase;
 	position: relative;
 	font-size: 14px;
 	font-weight: 700px;
 	border: 2px solid transparent;
 	padding: 0px !important;
+	color: #fff;
+}
+.nav-link:hover{
 	color: #fff;
 }
 .navbar .nav-link::before{
@@ -126,7 +136,20 @@ header .navbar{
 	position: absolute;
 	bottom: 0px;
 }
-
+.hide-dsk{
+	display: none;
+}
+.navbar-toggler i{
+	font-size: 30px;
+	color: #fff;
+	padding: 0;
+}
+.navbar-toggler{
+	padding: 0;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
 
 /*Hero Content*/
 .hero-content{
@@ -147,12 +170,12 @@ header .navbar{
     color: #008ed6;
 }
 .hero-content p{
-	text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 60px;
-    margin-right: 35px;
-    color: #999999;
+	text-transform: capitalize;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 60px;
+	margin-right: 35px;
+	color: #999999;
 }
 .hero-content .btn-one{
 	text-transform: uppercase;
@@ -184,14 +207,14 @@ header .navbar{
 .feature-section h6{
 	text-transform: uppercase;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 25px;
     color: #008ed6;
 }
 .feature-section h1{
 	text-transform: uppercase;
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 .feature-section .feature-item{
@@ -201,20 +224,16 @@ header .navbar{
 	cursor: pointer;
 	transition: 0.5s all ease-in-out;
 }
-.feature-section ul li{
-	list-style: none;
-}
-.feature-section .feature-item-box .fa{	
-    text-align: center;
-    font-size: 30px;
-    width: 70px;
-    height: 70px;
-    border: 1px solid #e5e5e5;
+.feature-section .icon-box{	
+	font-size: 30px;
+	width: 90px;
+    height: 90px;
+    border: 1px solid #8e898957;
     border-radius: 50%;
-    line-height: 70px;
-    margin-left: 33%;
+    text-align: center;
+    line-height: 90px;
+    margin: auto;
     color: #008ed6;
-    display: block;
 }
 .feature-section .feature-item-box h3{
 	text-align: center;
@@ -227,14 +246,8 @@ header .navbar{
 	font-size: 16px;
 	font-weight: 400;
 	margin: 20px;
-	/* padding: 0px 30px; */
 	color: #999999;
 }
-.feature-section .Feature-item-box{
-	cursor: pointer;
-	transition: 0.5s all ease-in-out;
-}
-
 
 /*About Section*/
 .about-section{
@@ -243,7 +256,7 @@ header .navbar{
 .about-section h6{
 	text-transform: uppercase;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 25px;
     color: #008ed6;
 }
@@ -255,7 +268,7 @@ header .navbar{
 }
 .about-section p{
 	text-transform: capitalize;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 60px;
     color: #999999;
@@ -292,11 +305,11 @@ header .navbar{
 	font-size: 18px;
 	margin: -3px -70px 22px !important;
 }
-.about-section img{
+.phone-img2{
     width: 100%;
     transition: all 0.3s ease-in-out;
 }
-.about-section img:hover{
+.phone-img2:hover{
     transform: scale(1.1, 1.1);
 }
 
@@ -308,19 +321,19 @@ header .navbar{
 .about-section-2 h6{
 	text-transform: uppercase;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 25px;
     color: #008ed6;
 }
 .about-section-2 h1{
 	text-transform: uppercase;
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 6700;
     margin-bottom: 20px;
 }
 .about-section-2 p{
 	text-transform: capitalize;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 60px;
     color: #999999;
@@ -333,11 +346,11 @@ header .navbar{
 .about-section-2:hover span::after{
 	width: 48%;
 }
-.about-section-2 img{
+.phone-img3{
     width: 100%;
     transition: all 0.3s ease-in-out;
 }
-.about-section-2 img:hover{
+.phone-img3:hover{
     transform: scale(1.1, 1.1);
 }
 
@@ -371,7 +384,7 @@ header .navbar{
 	text-transform: uppercase;
 	text-align: center;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 25px;
     color: #008ed6;
 }
@@ -379,19 +392,19 @@ header .navbar{
 	text-transform: uppercase;
 	text-align: center;
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
     color: #fff;
 }
 
 .testimonial-section .user-comment1 p{
-	text-align: start;
+	text-align: center;
 	font-size: 26px;
 	font-weight: 400;
 	color: #fff;
 }
 .testimonial-section .user-comment2 p{
-	text-align: start;
+	text-align: center;
 	font-size: 26px;
 	font-weight: 400;
 	color: #fff;
@@ -485,14 +498,14 @@ header .navbar{
 .pricing-section h6{
 	text-transform: uppercase;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 25px;
     color: #008ed6;
 }
 .pricing-section h1{
 	text-transform: uppercase;
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 700;
     color: #000;
 }
 .pricing-section:hover span::before,
@@ -507,8 +520,8 @@ header .navbar{
 }
 .pricing-section .price-table h2{
 	text-transform: uppercase;
-	font-size: 40px;
-	font-weight: 700;
+	font-size: 35px;
+	font-weight: 600;
 	padding-bottom: 20px;
 }
 .pricing-section .price{
@@ -528,7 +541,7 @@ header .navbar{
 	font-size: 40px;
 }
 .pricing-section .order-details p{
-	font-size: 22px;
+	font-size: 16px;
 	padding: 30px 20px;
 	color: #9999;
 }
@@ -537,7 +550,7 @@ header .navbar{
 }
 .pricing-section .order{
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 700;
 	border: 1px solid #9999;
 	border-radius: 6px;
@@ -574,14 +587,14 @@ header .navbar{
 .contact-section h6{
 	text-transform: uppercase;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 25px;
     color: #008ed6;
 }
 .contact-section h1{
 	text-transform: uppercase;
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
     color: #000;
 }
@@ -655,7 +668,7 @@ header .navbar{
 /*Footer Section*/
 footer{
 	background-color: #15141a ;
-	padding: 50px 0 40px 0;
+	padding: 40px 0 30px 0;
 }
 footer .social-media ul li{
 	list-style: none;

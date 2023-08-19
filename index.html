@@ -40,7 +40,9 @@
                     </a>
                     <!-- Responsive Menu Button -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
+                      <span class="navbar-toggler-i">
+                        <i class="fa fa-bars"></i>
+                      </span>
                     </button>
                     <!-- Menu Items Start -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -70,7 +72,7 @@
               </nav>
               <!-- Navmenu End -->
             </div>
-              <div class="row align-self-center ">
+              <div class="row height align-self-center ">
                 <div class="col-md-6 hero-content ">
                   <h6>introducing lucid theme</h6>
                   <h1>Carefully crafted and beautiful landing page.</h1>
@@ -80,7 +82,8 @@
                 </div>
                 <div class="col-md-5 offset-md-1">
                   <div class="phone-img">
-                    <img src="assets/img/phone1.png" class="img-fluid" alt=iphone>
+                    <img src="assets/img/phone1.png" class="img-fluid hide-mb" alt="iphone">
+                    <img src="assets/img/phone2.png" class="img-fluid hide-dsk"alt="iphone">
                   </div>
                 </div>
               </div>
@@ -100,60 +103,42 @@
                   <span></span>
                 </div>
                 <div class="row feature-item">
-                  <div class="col-md-3 text-center">
-                    <div class="feature-item-box">
-                        <ul>
-                          <li>
-                            <a href="">
-                              <i class="fa fa-tv"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      <h3>Responsive</h3>
-                      <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p> 
-                    </div>             
-                  </div>
-                  <div class="col-md-3 text-center">
+                  <div class="col-md-3 col-sm-6 text-center">
                     <div class="feature-item-box">
                       <div class="icon-box">
-                          <ul>
-                            <li>
-                              <a href="">
-                                <i class="fa fa-gear"></i>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>  
+                        <i class="fa fa-tv"></i>
+                      </div>
+                        <h3>Responsive</h3>
+                        <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p> 
+                    </div>             
+                  </div>
+                  <div class="col-md-3 col-sm-6 text-center">
+                    <div class="feature-item-box">
+                      <div class="icon-box">
+                        <i class="fa fa-gear"></i>
+                      </div>
                         <h3>Customizable</h3>
-                        <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
-                    </div>                
+                        <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p> 
+                    </div>             
                   </div>
-                  <div class="col-md-3 text-center">
+                  <div class="col-md-3 col-sm-6 text-center">
                     <div class="feature-item-box">
-                          <ul>
-                            <li>
-                              <a href="">
-                                <i class="fa fa-thumbs-up"></i>
-                              </a>
-                            </li>
-                          </ul>  
-                        <h3>Lovely Design</h3>
-                        <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
-                    </div>                 
+                      <div class="icon-box">
+                        <i class="fa fa-thumbs-up"></i>
+                      </div>
+                        <h3>Lovely design</h3>
+                        <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p> 
+                    </div>             
                   </div>
-                  <div class="col-md-3 text-center">
+                  <div class="col-md-3 col-sm-6 text-center">
                     <div class="feature-item-box">
-                          <ul>
-                            <li>
-                              <a href="">
-                                <i class="fa fa-mobile"></i>
-                              </a>
-                            </li>
-                          </ul>
+                      <div class="icon-box">
+                        <i class="fa fa-mobile-screen-button"></i>
+                      </div>
                         <h3>Mobile Friendly</h3>
                         <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p> 
-                    </div>                  
-                </div>
+                    </div>             
+                  </div>
               </div>
             </div>
         </div>     
@@ -161,12 +146,14 @@
     <!-- Feature-Section End -->
 
 
-    <!-- About Section Start -->
+    <!-- About Section 1 Start -->
     <section class="about-section">
       <div class="container">
         <div class="row heading">
           <div class="col-md-5 offset-md-1">
-            <img src="assets/img/phone2.png" class="iphone2" alt="iphone">
+            <div class="phone-img2">
+              <img src="assets/img/phone2.png" class="img-fluid" alt="iphone">
+            </div>
           </div>
           <div class="col-md-6">
             <h6>dip into the details</h6>
@@ -222,13 +209,13 @@
         </div>
       </div>
     </section>
-    <!-- About Section End -->
+    <!-- About Section 1 End -->
 
 
     <!-- About Section 2 Start -->
     <section class="about-section-2">
       <div class="container">
-        <div class="row heading">
+        <div class="row heading flex">
           <div class="col-md-6">
             <h6>dip into the details</h6>
             <h1>Super Easy To Customize</h1>
@@ -236,10 +223,12 @@
             <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>   
           </div>
           <div class="col-md-5 offset-md-1">
-            <img src="assets/img/phone3.png" class="iphone2" alt="iphone">
-          </div>
+            <div class="phone-img3">
+              <img src="assets/img/phone3.png" class="img-fluid" alt="iphone">
+            </div>
           </div>
         </div>
+      </div>
     </section>
     <!-- About Section-2 End -->
 
@@ -385,10 +374,10 @@
     <section class="ad-section">
       <div class="container">
         <div class="row">
-          <div class="col-md-7 text-center">
+          <div class="col-md-7 col-sm-12 text-center">
             <p><span>Like what you see?</span>Get this great theme now!</p>
           </div>
-          <div class="col-md-5 align-self-right">
+          <div class="col-md-5 col-sm-12 text-end">
             <ul>
               <li>
                 <a href="" class="btn-one">View Features</a>
@@ -414,7 +403,7 @@
         </div>  
 
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
             <div class="price-table">
               <h2>Free</h2>
               <div class="price">
@@ -428,7 +417,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
             <div class="price-table">
               <h2>Personal</h2>
               <div class="price">
@@ -442,7 +431,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
             <div class="price-table">
               <h2>Business</h2>
               <div class="price">
@@ -456,7 +445,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
             <div class="price-table">
               <h2>Ultimate</h2>
               <div class="price">
