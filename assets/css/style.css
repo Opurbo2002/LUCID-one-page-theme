@@ -217,6 +217,10 @@ header .nav-link{
     font-weight: 700;
     margin-bottom: 20px;
 }
+.feature-item{
+	margin-right: 0;
+	margin-left: 0;
+}
 .feature-section .feature-item{
 	margin-top: 60px;
 }	
