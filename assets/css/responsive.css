@@ -20,6 +20,7 @@
 	.phone-img3{width: 70%; margin: 0 auto 30px auto;}
 
 	.pricing-section .price-table{ margin:0 0 20px 0}
+	.owl-theme .owl-dots, .owl-theme .owl-nav {right: 40%;}
 	.ad-section p {font-size: 26px;text-align: center; margin-bottom: 24px}
 	.ad-section p span{ font-size:26px;}
 	.ad-section ul li{ text-align:center;}
@@ -48,4 +49,5 @@
 	.hero-content h1{font-size:22px; }
 	.hero-content p{padding: 0;}
 	.feature-section h1{ font-size:24px }
+	.owl-theme .owl-dots, .owl-theme .owl-nav {right: 36%;}
 }
